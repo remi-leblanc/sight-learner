@@ -5,8 +5,6 @@
     flex-direction: row-reverse;
     height: 200px;
     width: 100%;
-    margin-left: -3px;
-    margin-right: -3px;
 }
 .note{
     border-radius: 3px;
@@ -16,16 +14,18 @@
     position: relative;
     width: 100%;
     background-color: #fff;
-    margin: 0 3px;
+    margin: 0 2px;
     height: 100%;
 }
 .note.black{
     position: absolute;
-    right: -3px;
+    right: -2px;
     transform: translate(50%, 0);
     background-color: #000;
-    width: 50%;
+    width: 60%;
     height: 65%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
 .note.correct{

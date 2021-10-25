@@ -38,14 +38,7 @@
 					</div>
 				</div>
 				<h3>Timer</h3>
-				<select v-model="params.timer" class="frame">
-					<option value=1>1s</option>
-					<option value=2>2s</option>
-					<option value=3>3s</option>
-					<option value=4>4s</option>
-					<option value=5>5s</option>
-					<option value=6>6s</option>
-				</select>
+				<input type="number" min="1" max="10" v-model="params.timer" class="frame frame-float" onkeydown="return false">
 				<h3>Note range</h3>
 				<input type="number" min="5" max="13" v-model="params.range" class="frame" onkeydown="return false">
 			</div>
